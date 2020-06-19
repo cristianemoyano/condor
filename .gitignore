@@ -1,0 +1,4 @@
+analyzer.txt
+cleaner.txt
+*.bak
+.DS_Store
