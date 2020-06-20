@@ -24,8 +24,8 @@ def find_version(*file_parts):
 
 
 setuptools.setup(
-    name="condor",
-    version=find_version("condor", "main.py"),
+    name="pycondor",
+    version=find_version("pycondor", "main.py"),
     description="Clean up stale code",
     long_description="\n\n".join(
         [open("README.md").read(), open("CHANGELOG.md").read()]
@@ -34,7 +34,7 @@ setuptools.setup(
     keywords=['stale', 'code', 'clean', 'techn', 'debt'],
     author="Cristian Moyano",
     author_email="cristianmoyano.mza@gmail.com",
-    url="https://github.com/cristianemoyano/condor",
+    url="https://github.com/cristianemoyano/pycondor",
     license="MIT",
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -48,7 +48,7 @@ setuptools.setup(
         "Programming Language :: Python :: Implementation :: PyPy",
         "Topic :: Software Development :: Quality Assurance",
     ],
-    entry_points={"console_scripts": ["condor = condor.main:init"]},
+    entry_points={"console_scripts": ["pycondor = pycondor.main:init"]},
     python_requires="!=3.4.*",
     packages=setuptools.find_packages(exclude=["tests"]),
 )
