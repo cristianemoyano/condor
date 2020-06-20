@@ -1,3 +1,3 @@
-from condor.main import init
+from pycondor.main import init
 
 init()
