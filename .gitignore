@@ -2,3 +2,13 @@ analyzer.txt
 cleaner.txt
 *.bak
 .DS_Store
+
+
+build/
+dist/
+
+pycondor.egg-info/
+.cache/
+.coverage
+.pytest_cache/
+.venv/
