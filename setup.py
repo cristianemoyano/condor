@@ -25,7 +25,7 @@ def find_version(*file_parts):
 
 setuptools.setup(
     name="pycondor",
-    version=find_version("pycondor", "main.py"),
+    version=find_version("pycondor", "version.py"),
     description="Clean up stale code",
     long_description="\n\n".join(
         [open("README.md").read(), open("CHANGELOG.md").read()]
