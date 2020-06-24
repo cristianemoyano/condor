@@ -3,3 +3,11 @@
 ------------------
 - [MINOR] edit changelog
 
+
+0.3.0 (2020-06-23)
+------------------
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- New scenarios (#3)
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- [MINOR] edit changelog
+
