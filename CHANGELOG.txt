@@ -58,3 +58,22 @@
 - Merge branch 'master' of https://github.com/cristianemoyano/pycondor
 - [MINOR] edit changelog
 
+
+0.5.2 (2020-06-24)
+------------------
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Fix init (#14)
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- [MINOR] edit changelog
+
