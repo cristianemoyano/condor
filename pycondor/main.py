@@ -1,13 +1,12 @@
 import argparse
 import sys
 
-__version__ = "0.0.1"
-
+from pycondor.version import __version__
 
 class PyCondor(object):
 
     def report(*args, **kwargs):
-        print('PRINT')
+        print('Pepe')
 
 
 def _parse_args():
