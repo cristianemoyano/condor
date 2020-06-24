@@ -41,3 +41,20 @@
 - Merge branch 'master' of https://github.com/cristianemoyano/pycondor
 - [MINOR] edit changelog
 
+
+0.5.1 (2020-06-24)
+------------------
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Fix setup 2 (#12)
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- Merge branch 'master' of https://github.com/cristianemoyano/pycondor
+- [MINOR] edit changelog
+
