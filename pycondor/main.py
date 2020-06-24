@@ -3,9 +3,9 @@ import argparse
 import sys
 
 from pycondor.version import __version__
-from analyzer import Analyzer
-from cleaner import Cleaner
-from replace import ApplicationProcess
+from pycondor.analyzer import Analyzer
+from pycondor.cleaner import Cleaner
+from pycondor.replace import ApplicationProcess
 
 class PyCondor(object):
 
