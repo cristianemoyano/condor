@@ -1,7 +1,7 @@
 import ast
 
-from recognizers import get_recognizer, FEATURE_FLAG_RECOGNIZER
-from logger import getLogger
+from pycondor.recognizers import get_recognizer, FEATURE_FLAG_RECOGNIZER
+from pycondor.logger import getLogger
 
 class AnalyzerMixin(object):
 
