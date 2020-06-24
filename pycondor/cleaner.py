@@ -9,12 +9,12 @@ class Cleaner(object):
 
     TAB_4 = '    '
 
-    def __init__(self):
+    def __init__(self, filename=None):
         self.logger = getLogger('cleaner')
         self.recognizer = get_recognizer(FEATURE_FLAG_RECOGNIZER)
         self.separator = self.TAB_4
         self.ANALYZER_LOG = "analyzer.txt"
-        self.DIRTY_FILE = "dead_code.py"
+        self.DIRTY_FILE = filename if filename else "dead_code.py"
         self.DUMMY_FILE = self.DIRTY_FILE + '.bak'
         self.dead_lines = []
         self.live_lines = []
@@ -124,17 +124,17 @@ class Cleaner(object):
                 if index in live_lines_flatten:
                     new_line = self._remove_tab(line, target_live_lines.get(index, 1))
                     dummy.write(new_line)
-                    self.logger.info('line moved   {index}: {line}'.format(line=str(line).rstrip(), index=index))
+                    self.logger.info('line MOV {index}: {line}'.format(line=str(line).rstrip(), index=index))
                 elif index in complex_lines_flatten:
                     new_line = self._remove_feature_flag_statement(line)
                     dummy.write(new_line)
-                    self.logger.info('line updated   {index}: {line}'.format(line=str(new_line).rstrip(), index=index))
+                    self.logger.info('line UPT {index}: {line}'.format(line=str(new_line).rstrip(), index=index))
                 # Copy the rest of the lines and skip the dead lines into the dummy file.
                 elif index not in special_lines:
                     dummy.write(line)
                 # Log only affected lines.
                 else:
-                    self.logger.info('line removed {index}: {line}'.format(line=str(line).rstrip(), index=index))
+                    self.logger.info('line REM {index}: {line}'.format(line=str(line).rstrip(), index=index))
 
     def clean(self):
         self._parse_live_and_dead_lines()
