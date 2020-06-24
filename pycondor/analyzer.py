@@ -1,11 +1,17 @@
 import ast
 
-
 from recognizers import get_recognizer, FEATURE_FLAG_RECOGNIZER
 from logger import getLogger
 
+class AnalyzerMixin(object):
 
-class Analyzer(ast.NodeVisitor):
+    def _collect_stats(self, report):
+        # print(ast.dump(node))  # Debug
+        if report:
+            self.stats[self.recognizer.NAME][self.recognizer.STATS_KEY].append(report)
+
+
+class Analyzer(ast.NodeVisitor, AnalyzerMixin):
     def __init__(self):
         self.recognizer = get_recognizer(FEATURE_FLAG_RECOGNIZER)
         self.stats = {
@@ -14,11 +20,6 @@ class Analyzer(ast.NodeVisitor):
             }
         }
         self.logger = getLogger('analyzer')
-
-    def _collect_stats(self, report):
-        # print(ast.dump(node))  # Debug
-        if report:
-            self.stats[self.recognizer.NAME][self.recognizer.STATS_KEY].append(report)
 
     def visit_If(self, node):
         self._collect_stats(self.recognizer(node).generate_report())
