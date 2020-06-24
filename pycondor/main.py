@@ -27,7 +27,7 @@ class PyCondor(object):
 
     def process(self):
         self.analyze()
-        self.cleaner()
+        self.clean()
         self.apply()
 
 
