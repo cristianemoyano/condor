@@ -31,19 +31,19 @@ class PyCondor(object):
         self.apply()
 
 
-def _parse_args():
+def parse_args():
     usage = "%(prog)s [options] PATH [PATH ...]"
     version = "pycondor {}".format(__version__)
 
     parser = argparse.ArgumentParser(prog="pycondor", usage=usage)
     parser.add_argument("--version", action="version", version=version)
-    parser.add_argument("-f", "--filename", action="store_true", required=True)
+    parser.add_argument("-f", required=True, type=str, help="File with dead code.")
     return parser.parse_args()
 
 
 def init():
-    args = _parse_args()
-    pycondor = PyCondor(args=args.filename)
+    args = parse_args()
+    pycondor = PyCondor(filename=args.f)
     sys.exit(
         pycondor.process()
     )
