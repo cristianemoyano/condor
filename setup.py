@@ -1,31 +1,13 @@
 #! /usr/bin/env python
 
-import codecs
-import os.path
-import re
-
 import setuptools
 
-
-def read(*parts):
-    here = os.path.abspath(os.path.dirname(__file__))
-    with codecs.open(os.path.join(here, *parts), "r") as f:
-        return f.read()
-
-
-def find_version(*file_parts):
-    version_file = read(*file_parts)
-    version_match = re.search(
-        r"^__version__ = ['\"]([^'\"]*)['\"]$", version_file, re.M
-    )
-    if version_match:
-        return version_match.group(1)
-    raise RuntimeError("Unable to find version string.")
+from pycondor.version import __version__
 
 
 setuptools.setup(
     name="pycondor",
-    version=find_version("pycondor", "version.py"),
+    version=__version__,
     description="Clean up stale code",
     long_description="\n\n".join(
         [open("README.md").read(), open("CHANGELOG.md").read()]
