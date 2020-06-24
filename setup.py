@@ -9,10 +9,6 @@ setuptools.setup(
     name="pycondor",
     version=__version__,
     description="Clean up stale code",
-    long_description="\n\n".join(
-        [open("README.md").read(), open("CHANGELOG.txt").read()]
-    ),
-    long_description_content_type="text/markdown",
     keywords=['stale', 'code', 'clean', 'techn', 'debt'],
     author="Cristian Moyano",
     author_email="cristianmoyano.mza@gmail.com",
